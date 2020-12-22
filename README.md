@@ -1,4 +1,4 @@
-##layout-aceleradora
+## layout-aceleradora
 
 Esse repositório possui dois desafios da aceleradora.
 
