@@ -167,6 +167,8 @@ div#center_content {
         background-clip: padding-box;
         padding: 5px;
         width: 80%;
+        margin: auto;
+        margin-bottom: 25px;
     }
 
 
