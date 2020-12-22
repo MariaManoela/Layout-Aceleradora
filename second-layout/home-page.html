@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Layout 2 </title>
+    <link rel="stylesheet" href="estilo_2.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+    </style>
+</head>
+
+
+<body> 
+    <div class="screen"> 
+        <header class="header"></header>
+        <menu class="main_menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Graduação</a></li>
+                <li><a href="#">Pós-Graduação</a></li>  
+            </ul>
+        </menu>
+        
+            <div id="center_content">
+                
+                <nav class="nav_column"> 
+                    <ul>
+                        <li><a href=”#”>Extensão</a></li>
+                        <li><a href=”#”>Pesquisa</a></li>
+                        <li><a href=”#”>Inovação</a></li>
+                        <li><a href=”#”>Estude Conosco</a></li>
+                        <li><a href=”#”>Trabalhe Conosco</a></li>
+                    </ul>    
+                </nav>
+ 
+                
+                <div class="content">
+                    <form class="form" action="" method="POST">
+                        
+                        <h2>Fale conosco</h2>
+
+                        <div> 
+                            <label for="name"> Nome </label> <br>
+                            <input type="text" id="name">
+                        </div>
+                        
+                        <div>
+                            <label for="mail"> Email </label> <br>
+                            <input type="email" id="email">
+                        </div>
+
+                        <div>
+                            <label for="telephone"> Telefone </label> <br>
+                            <input type="number" id="telephone">
+                        </div>
+
+                        <div>
+                            <label for="mesage"> Mensagem</label> <br>
+                            <input type="text" id="mesage">
+                        </div>
+
+                        <div class="button">
+                            <button type="submit"> Enviar </button>
+                        </div>
+                    </form>
+
+                     
+                    <form action=""> 
+
+                        <div class="complete_report_card">
+                            <h2>Preencha os dados abaixo para obter o Boletim Escolar</h2>
+                        </div>
+
+                        <div>
+                            <label for="name"> Nome </label> <br>
+                            <input type="text" id="name_2">
+                        </div>
+
+                        <div>
+                            <label for="grade_1"> 1° Semestre </label> <br>
+                            <input type="number" id="grade_1">
+                        </div>
+
+                        <div>
+                            <label for="grade_2"> 2° Semestre </label> <br>
+                            <input type="number" id="grade_2">
+                        </div>
+
+                        <div>
+                            <label for="attendance"> Frequência </label> <br>
+                            <input type="text" id="attendance">
+                        </div>
+
+                        <div class="button">
+                            <button type="button" onclick="complete_table(event)">  Enviar </button>
+                        </div>  
+                    </form>
+                        
+                    <div class="report_card">
+                        <h2>Boletim</h2>
+                    </div>
+                    
+
+                    <table id="table">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>1° Semestre</th>
+                                <th>2° Semestre</th>
+                                <th>Nota Final</th>
+                                <th>Frequência</th>
+                            </tr>
+                        </thead>
+                            
+                        <tbody>
+                                <tr>
+                                    <td id="name_table">   </td>
+                                    <td id="grade_table1">  </td>
+                                    <td id="grade_table2">  </td>
+                                    <td id="grade_final">  </td>
+                                    <td id="attendance_table">  </td>
+                                </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <aside class="aside-column"></aside>
+                
+            </div>
+            
+    <footer class="footer">
+                
+        <div class="footer-info">
+            <p class="info">Avenida Flores, 567 São José - Caxias do Sul/RS</p>
+            <p class="info">CEP: 27365-581</p>
+            <p class="info">Telefone: (91) 1234-5678</p>
+        </div>
+            
+    </footer>
+    </div>
+    <script src="grades.js"></script>
+</body>
+</html>
